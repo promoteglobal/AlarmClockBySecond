@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Alarm Clock</title>
+  <style>
+    #alarmMessage {
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alarm Clock</h1>
+
+  <label for="hour">Hour:</label>
+  <input type="number" id="hour" min="0" max="23"><br>
+
+  <label for="minute">Minute:</label>
+  <input type="number" id="minute" min="0" max="59"><br>
+
+  <label for="second">Second:</label>
+  <input type="number" id="second" min="0" max="59"><br>
+
+  <button id="setAlarmButton">Set Alarm</button>
+
+  <p id="alarmStatus"></p>
+  <p id="alarmMessage"></p>
+
+  <script src="my_alarm.js"></script>
+</body>
+</html>
+
+
+
