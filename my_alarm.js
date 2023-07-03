@@ -67,17 +67,48 @@ const start = () => {
 };
 
 
-//This is for feedback Tab
-document.getElementById('feedback-tab-button').addEventListener('click', function() {
-  var formContainer = document.getElementById('feedback-form-container');
-  if (formContainer.style.display === 'block') {
-    formContainer.style.display = 'none';
+// This is for feedback form
+const feedbackFormContainer = document.getElementById('feedback-form-container');
+const feedbackTab = document.getElementById('feedback-tab-button');
+
+// Show feedback form
+const showFeedbackForm = () => {
+  feedbackFormContainer.style.display = 'block';
+};
+
+// Hide feedback form
+const hideFeedbackForm = () => {
+  feedbackFormContainer.style.display = 'none';
+};
+
+// Toggle feedback form visibility
+const toggleFeedbackForm = () => {
+  if (feedbackFormContainer.style.display === 'block') {
+    hideFeedbackForm();
   } else {
-    formContainer.style.display = 'block';
+    showFeedbackForm();
+  }
+};
+
+// Open feedback form when clicking on the feedback tab
+feedbackTab.addEventListener('click', toggleFeedbackForm);
+
+// Close the feedback form when clicking outside of the form container
+document.addEventListener('click', (event) => {
+  if (!feedbackFormContainer.contains(event.target) && event.target !== feedbackTab) {
+    hideFeedbackForm();
   }
 });
 
 start();
+
+
+
+
+
+
+
+
 
 
 //Ctrl + C to exit node
