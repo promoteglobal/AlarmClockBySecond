@@ -1,0 +1,32 @@
+/* for times up alarm message */
+#alarmMessage {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+
+/* Feedback form styling */
+#feedback-tab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+
+#feedback-tab-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#feedback-form-container {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+

@@ -12,13 +12,7 @@
 </script>
   <meta charset="UTF-8">
   <title>Alarm Clock</title>
-  <style>
-    #alarmMessage {
-      font-size: 24px;
-      font-weight: bold;
-      color: red;
-    }
-  </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Alarm Clock by Second</h1>
@@ -35,7 +29,18 @@
   <button id="setAlarmButton">Set Alarm</button>
 
   <p id="alarmStatus"></p>
+  
   <p id="alarmMessage"></p>
+
+  <!-- This is for feedback tab -->
+  <div id="feedback-tab">
+    <button id="feedback-tab-button">Feedback</button>
+    <div id="feedback-form-container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGTLDXvq4E1052ZacBzAniy989mCM5JLAfuGGFiA0CQfysRg/viewform?embedded=true" width="640" height="832" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+  <!-- This is for feedback tab -->
+
 
   <script src="my_alarm.js"></script>
 </body>

@@ -66,6 +66,17 @@ const start = () => {
   displayAlarmStatus("Alarm clock off");
 };
 
+
+//This is for feedback Tab
+document.getElementById('feedback-tab-button').addEventListener('click', function() {
+  var formContainer = document.getElementById('feedback-form-container');
+  if (formContainer.style.display === 'block') {
+    formContainer.style.display = 'none';
+  } else {
+    formContainer.style.display = 'block';
+  }
+});
+
 start();
 
 
