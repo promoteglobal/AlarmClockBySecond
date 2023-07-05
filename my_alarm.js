@@ -113,3 +113,8 @@ start();
 
 //Ctrl + C to exit node
 //node my_alarm.js  to start node
+
+
+//add live clock
+//repeat alarm
+//am/pm option
